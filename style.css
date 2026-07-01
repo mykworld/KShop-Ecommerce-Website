@@ -17,8 +17,8 @@
 }
 
 body{
-    background:#;
-    color:#ffffff;
+    background:#f5f7fb;
+    color:#1e293b;
     overflow-x:hidden;
 }
 
@@ -51,9 +51,9 @@ header{
     top:0;
     left:0;
     z-index:999;
-    background:#000000;
+    background:#ffffff;
     box-shadow:0 5px 15px rgba(0,0,0,.08);
-    border-bottom:1px solid #222;
+    border-bottom:1px solid #e5e7eb;
 }
 
 .navbar{
@@ -107,7 +107,7 @@ font-size:16px;
 
 font-weight:500;
 
-color:#222;
+color:#1e293b;
 
 transition:.3s;
 
@@ -175,7 +175,7 @@ font-size:24px;
 
 cursor:pointer;
 
-color:#222;
+color:#1e293b;
 
 }
 
@@ -441,7 +441,7 @@ color:#666;
 }
 
 .product-card{
-    background:#111111;
+    background:#ffffff;
     border-radius:20px;
     overflow:hidden;
     position:relative;
@@ -532,7 +532,7 @@ color:#666;
 }
 
 .offer-banner{
-    background:linear-gradient(135deg,#0d6efd,#2b7fff);
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
     color:#fff;
     border-radius:25px;
     padding:70px;
@@ -575,7 +575,7 @@ color:#666;
 .newsletter h2{
     font-size:38px;
     margin-bottom:15px;
-    color:#222;
+    color:#1e293b;
 }
 
 .newsletter p{
@@ -621,7 +621,7 @@ color:#666;
 =============================*/
 
 footer{
-    background:#111827;
+    background:#0f172a;
     color:#fff;
     padding:60px 10%;
     margin-top:80px;
@@ -1512,7 +1512,7 @@ outline:none;
 
 font-size:15px;
 
-}
+ }
 
 .contact-form textarea{
 
