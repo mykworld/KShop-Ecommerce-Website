@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KShop - Online Shopping</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<!--================ NAVBAR ================-->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-cart-shopping"></i>
+<span>KShop</span>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#products">Products</a></li>
+
+<li><a href="#categories">Categories</a></li>
+
+<li><a href="#offers">Offers</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-icons">
+
+<div class="search-box">
+
+<input
+type="text"
+placeholder="Search Products...">
+
+<button>
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</button>
+
+</div>
+
+<div class="cart-icon">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cartCount">0</span>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<!--================ HERO SECTION ================-->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+
+Biggest Shopping Sale
+
+</h1>
+
+<p>
+
+Buy Premium Fashion, Electronics, Shoes, Watches and Accessories
+at amazing discounts.
+
+</p>
+
+<a href="#products" class="shop-btn">
+
+Shop Now
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/hero.jpg" alt="Hero Banner">
+
+</div>
+
+</section>
+
+<!--================ FEATURE BOXES ================-->
+
+<section class="features">
+
+<div class="feature">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3>Free Delivery</h3>
+
+<p>Free delivery on orders above ₹999.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-credit-card"></i>
+
+<h3>Secure Payment</h3>
+
+<p>100% Secure Payment Gateway.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-rotate-left"></i>
+
+<h3>Easy Returns</h3>
+
+<p>7 Days Easy Return Policy.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>24/7 Support</h3>
+
+<p>Customer support anytime.</p>
+
+</div>
+
+</section>
+
+<!-- Product section yahan se next part me shuru hoga -->
+<!--================ CATEGORIES ================-->
+
+<section class="categories" id="categories">
+
+    <div class="section-title">
+        <h2>Shop by Category</h2>
+        <p>Choose your favourite category</p>
+    </div>
+
+    <div class="category-container">
+
+        <div class="category-card">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h3>Mobiles</h3>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-laptop"></i>
+            <h3>Laptops</h3>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-shirt"></i>
+            <h3>Fashion</h3>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-shoe-prints"></i>
+            <h3>Shoes</h3>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Watches</h3>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-headphones"></i>
+            <h3>Accessories</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ PRODUCTS ================-->
+
+<section class="products" id="products">
+
+    <div class="section-title">
+        <h2>Featured Products</h2>
+        <p>Best Selling Products</p>
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+
+            <span class="badge">SALE</span>
+
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" alt="Shoes">
+
+            <div class="product-info">
+
+                <h3>Running Shoes</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p class="price">
+                    ₹1999
+                    <del>₹2999</del>
+                </p>
+
+                <button class="cart-btn"
+                onclick="addToCart('Running Shoes',1999)">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <span class="badge">NEW</span>
+
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600" alt="Phone">
+
+            <div class="product-info">
+
+                <h3>Smart Phone</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                </div>
+
+                <p class="price">
+                    ₹24999
+                    <del>₹28999</del>
+                </p>
+
+                <button class="cart-btn"
+                onclick="addToCart('Smart Phone',24999)">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <span class="badge">HOT</span>
+
+            <img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?w=600" alt="Laptop">
+
+            <div class="product-info">
+
+                <h3>Gaming Laptop</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p class="price">
+                    ₹69999
+                    <del>₹79999</del>
+                </p>
+
+                <button class="cart-btn"
+                onclick="addToCart('Gaming Laptop',69999)">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600" alt="Watch">
+
+            <div class="product-info">
+
+                <h3>Smart Watch</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                </div>
+
+                <p class="price">
+                    ₹3499
+                    <del>₹4999</del>
+                </p>
+
+                <button class="cart-btn"
+                onclick="addToCart('Smart Watch',3499)">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SPECIAL OFFERS ================= -->
+
+<section class="offers" id="offers">
+
+    <div class="section-title">
+        <h2>Today's Best Deals</h2>
+        <p>Limited time offers</p>
+    </div>
+
+    <div class="offer-banner">
+
+        <div class="offer-text">
+            <h2>UP TO 60% OFF</h2>
+            <p>Fashion, Electronics & Accessories</p>
+
+            <a href="#products" class="shop-btn">
+                Shop Deals
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= MORE PRODUCTS ================= -->
+
+<section class="products">
+
+<div class="product-container">
+
+<div class="product-card">
+
+<span class="badge">-30%</span>
+
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600" alt="Headphones">
+
+<div class="product-info">
+
+<h3>Wireless Headphones</h3>
+
+<div class="rating">⭐⭐⭐⭐⭐</div>
+
+<p class="price">
+₹2499
+<del>₹3499</del>
+</p>
+
+<button class="cart-btn"
+onclick="addToCart('Wireless Headphones',2499)">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<span class="badge">HOT</span>
+
+<img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=600" alt="Watch">
+
+<div class="product-info">
+
+<h3>Premium Watch</h3>
+
+<div class="rating">⭐⭐⭐⭐⭐</div>
+
+<p class="price">
+₹3999
+<del>₹5999</del>
+</p>
+
+<button class="cart-btn"
+onclick="addToCart('Premium Watch',3999)">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<span class="badge">NEW</span>
+
+<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=600" alt="Backpack">
+
+<div class="product-info">
+
+<h3>Travel Backpack</h3>
+
+<div class="rating">⭐⭐⭐⭐☆</div>
+
+<p class="price">
+₹1499
+<del>₹1999</del>
+</p>
+
+<button class="cart-btn"
+onclick="addToCart('Travel Backpack',1499)">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<span class="badge">SALE</span>
+
+<img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600" alt="Sneakers">
+
+<div class="product-info">
+
+<h3>White Sneakers</h3>
+
+<div class="rating">⭐⭐⭐⭐⭐</div>
+
+<p class="price">
+₹2999
+<del>₹3999</del>
+</p>
+
+<button class="cart-btn"
+onclick="addToCart('White Sneakers',2999)">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600" alt="Camera">
+
+<div class="product-info">
+
+<h3>DSLR Camera</h3>
+
+<div class="rating">⭐⭐⭐⭐⭐</div>
+
+<p class="price">
+₹45999
+<del>₹49999</del>
+</p>
+
+<button class="cart-btn"
+onclick="addToCart('DSLR Camera',45999)">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=600" alt="Keyboard">
+
+<div class="product-info">
+
+<h3>Mechanical Keyboard</h3>
+
+<div class="rating">⭐⭐⭐⭐⭐</div>
+
+<p class="price">
+₹3499
+<del>₹4999</del>
+</p>
+
+<button class="cart-btn"
+onclick="addToCart('Mechanical Keyboard',3499)">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1580894908361-967195033215?w=600" alt="Monitor">
+
+<div class="product-info">
+
+<h3>24 Inch Monitor</h3>
+
+<div class="rating">⭐⭐⭐⭐☆</div>
+
+<p class="price">
+₹10999
+<del>₹12999</del>
+</p>
+
+<button class="cart-btn"
+onclick="addToCart('24 Inch Monitor',10999)">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600" alt="Tshirt">
+
+<div class="product-info">
+
+<h3>Men's T-Shirt</h3>
+
+<div class="rating">⭐⭐⭐⭐⭐</div>
+
+<p class="price">
+₹799
+<del>₹1299</del>
+</p>
+
+<button class="cart-btn"
+onclick="addToCart('Mens T-Shirt',799)">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+<h2>Subscribe for Latest Offers</h2>
+
+<p>Get updates about new arrivals and special discounts.</p>
+
+<div class="newsletter-box">
+
+<input
+type="email"
+placeholder="Enter your email">
+
+<button>
+Subscribe
+</button>
+
+</div>
+
+</section>
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-box">
+<h3>KShop</h3>
+<p>Your trusted online shopping destination.</p>
+</div>
+
+<div class="footer-box">
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="cart.html">Cart</a>
+
+</div>
+
+<div class="footer-box">
+<h3>Support</h3>
+
+<p>Email : support@kshop.com</p>
+
+<p>Phone : +91 9876543210</p>
+
+<p>Dehradun, India</p>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Follow Us</h3>
+
+<div class="social-icons">
+
+<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<p style="text-align:center;margin-top:30px;">
+© 2026 KShop. All Rights Reserved.
+</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | KShop</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span>KShop</span>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="cart.html">Cart</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="section-title" style="margin-top:130px;">
+
+<h2>Checkout</h2>
+
+<p>Complete your order securely.</p>
+
+</section>
+
+<section class="checkout-page">
+
+<div class="checkout-wrapper">
+
+<!-- LEFT -->
+
+<div class="checkout-form">
+
+<h3>Shipping Address</h3>
+
+<input type="text" id="fullName" placeholder="Full Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="tel" id="phone" placeholder="Mobile Number">
+
+<input type="text" placeholder="City">
+
+<input type="text" placeholder="State">
+
+<input type="text" placeholder="PIN Code">
+
+<textarea id="address" placeholder="Full Address"></textarea>
+
+<h3>Payment Method</h3>
+
+<label><input type="radio" name="payment" checked> Cash On Delivery</label>
+
+<label><input type="radio" name="payment"> UPI</label>
+
+<label><input type="radio" name="payment"> Debit / Credit Card</label>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="checkout-summary">
+
+<h3>Order Summary</h3>
+
+<hr>
+
+<div class="summary-row">
+
+<span>Total Items</span>
+
+<span id="checkoutItems">0</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>Delivery</span>
+
+<span>FREE</span>
+
+</div>
+
+<div class="summary-row total">
+
+<strong>Total</strong>
+
+<strong id="checkoutTotal">
+
+₹0
+
+</strong>
+
+</div>
+
+<hr>
+
+<div class="payment-security">
+
+<h4>Why Shop With Us?</h4>
+
+<ul>
+
+<li>✅ 100% Secure Payments</li>
+
+<li>🚚 Free Delivery</li>
+
+<li>🔄 7 Days Easy Return</li>
+
+<li>📞 24×7 Customer Support</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<div class="order-note">
+
+<h4>Order Note</h4>
+
+<textarea
+placeholder="Write any special delivery instructions..."
+rows="4">
+</textarea>
+
+</div>
+
+<div class="checkout-buttons">
+
+<button
+class="shop-btn"
+onclick="history.back()">
+
+Back To Cart
+
+</button>
+
+<button
+class="shop-btn"
+id="placeOrderBtn">
+
+Place Order
+
+</button>
+
+</div>
+</div>
+
+</div>
+
+</section>
+<div class="success-popup" id="successPopup">
+
+<div class="success-box">
+
+<div class="success-icon">✔</div>
+
+<h2>Order Placed Successfully!</h2>
+
+<p>
+Thank you for shopping with <b>KShop</b>.
+</p>
+
+<p>
+You will receive your order within
+<b>2-4 business days.</b>
+</p>
+
+<p>Your order has been confirmed.</p>
+
+<p id="orderNumber"></p>
+<p id="orderDate"></p>
+
+<button onclick="goHome()">
+Back To Home
+</button>
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
